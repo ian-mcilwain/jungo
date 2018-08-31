@@ -1,0 +1,128 @@
+/*-----------------------------------------------------
+
+[TABLE OF CONTENTS]
+
+1. Imports
+2. Variables
+3. General Styles
+4. Header
+5. Footer
+6. Home
+7. Inner Pages
+10. Media Queries
+
+-------------------------------------------------------*/
+
+/*--------
+1. Imports
+----------*/
+/*Import fonts, plugins here*/
+/*@import url('http://example.com/example_style.css');*/
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url("https://use.typekit.net/umb3alt.css");
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css');
+
+/*--------
+2. Variables
+----------*/
+
+/*Typography*/
+$fontTitle: "museo-slab",sans-serif;
+$fontMain: "museo-sans",sans-serif;
+$transition: all 0.2s ease;
+
+/*Colours*/
+$fontBlack: #3f3f3f;
+$blue: #0277bd;
+$yellow: #fdc526;
+$green: #43b77d;
+$blueHover: #0287d4;
+$yellowHover: #fdca3f;
+
+/*--------
+3. General Styles
+----------*/
+@import 'global/setup';
+
+body,
+html {
+	font-family: $fontMain;
+	color: $fontBlack;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: $fontTitle;
+}
+
+a {
+	text-decoration: none;
+	transition: $transition;
+}
+
+.plusTitle {
+	font-family: $fontMain;
+	font-weight: 600;
+
+	span {
+		font-weight: 400;
+		font-style: italic;
+		color: $green;
+	}
+}
+
+.container {
+	padding: 6% 8%;
+	max-width: 1400px;
+	margin: auto;
+}
+
+.banner	{
+	height: 200vh;
+
+	.container {
+		padding-top: calc(6% + 150px);
+	}
+}
+
+/*--------
+Buttons
+----------*/
+
+.btn {
+	position: relative;
+	text-transform: uppercase;
+	padding: 10px 35px;
+	font-weight: 600;
+	transition: $transition;
+
+	&:hover,
+	&:focus {
+		transform: translateY(-1px);
+		box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+	}
+}
+
+.btnBlue {
+	color: white;
+	background: $blue;
+}
+
+.btnYellow {
+	color: $fontBlack;
+	background: $yellow;
+}
+
+/*--------
+Partials
+----------*/
+
+@import 'global/navigation';
+@import 'global/footer';
+@import 'pages/home';
+@import 'pages/innerPages';
+@import 'pages/blog';
+@import 'global/mediaQueries';

@@ -1,0 +1,66 @@
+/* HOME */
+
+.home {
+    .banner {
+        background: $blue;
+    }
+
+    header .socialGroup {
+        a {
+            background: white;
+            color: $blue;
+
+            &:hover,
+            &:focus {
+                color: white;
+            }
+        }
+    }
+
+    .topBar {
+        a.tel {
+            color: white;
+        }
+    }
+
+    .btn.topCta {
+        background: $yellow;
+        color: $fontBlack;
+
+        &:hover,
+        &:focus {
+            background: $yellowHover;
+        }
+    }
+
+    header nav {
+        .logo.logoWhite {
+            display: block;
+        }
+
+        .logo.logoColour {
+            display: none;
+        }
+    }
+
+    li.depth-1 {
+        > a {
+            color: white;
+
+            &:hover,
+            &:focus {
+                border-bottom: 2px solid white;
+            }
+        }
+    }
+
+    li.hasChildren {
+        &:after {
+            color: white;
+        }
+
+        &:hover > a {
+            border-bottom: 2px solid white;
+        }
+    }
+}
