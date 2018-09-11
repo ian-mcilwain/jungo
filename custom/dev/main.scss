@@ -21,7 +21,6 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url("https://use.typekit.net/umb3alt.css");
 @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css');
-
 /*--------
 2. Variables
 ----------*/
@@ -38,6 +37,15 @@ $yellow: #fdc526;
 $green: #43b77d;
 $blueHover: #0287d4;
 $yellowHover: #fdca3f;
+
+/*--------
+{% set fontBlack = "#3f3f3f" %}
+{% set blue = "#0277bd" %}
+{% set yellow = "#fdc526" %}
+{% set green = "#43b77d" %}
+{% set blueHover = "#0287d4" %}
+{% set yellowHover = "#fdca3f" %}
+----------*/
 
 /*--------
 3. General Styles
@@ -124,5 +132,6 @@ Partials
 @import 'global/footer';
 @import 'pages/home';
 @import 'pages/innerPages';
+@import 'pages/features';
 @import 'pages/blog';
 @import 'global/mediaQueries';

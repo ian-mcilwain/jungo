@@ -26,6 +26,14 @@
 /*Typography*/
 /*Colours*/
 /*--------
+{% set fontBlack = "#3f3f3f" %}
+{% set blue = "#0277bd" %}
+{% set yellow = "#fdc526" %}
+{% set green = "#43b77d" %}
+{% set blueHover = "#0287d4" %}
+{% set yellowHover = "#fdca3f" %}
+----------*/
+/*--------
 3. General Styles
 ----------*/
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
@@ -720,6 +728,177 @@ p.itemTag {
     font-size: 18px; }
   .thankYou .mainBtn {
     margin-top: 20px; }
+
+/*-- features page --*/
+.features .topBar {
+  background-color: transparent; }
+
+.features section.banner {
+  background-image: url(https://cdn2.hubspot.net/hubfs/2831904/2018/features/features_background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 20% 10%;
+  height: 150vh;
+  max-height: 700px;
+  min-height: 500px; }
+  .features section.banner .container h1, .features section.banner .container h2, .features section.banner .container h3, .features section.banner .container h4, .features section.banner .container h5, .features section.banner .container p {
+    width: 50%; }
+  .features section.banner h1 {
+    font-size: 3em; }
+  .features section.banner h2 {
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 1.4em; }
+  .features section.banner .buttonRow .playBtn {
+    color: #3f3f3f; }
+    .features section.banner .buttonRow .playBtn .fa {
+      border: 5px solid #3f3f3f; }
+
+.features .featuresNav {
+  display: -ms-flexbox;
+  display: flex;
+  height: 30vh;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  position: relative; }
+  .features .featuresNav .plusLogo {
+    position: absolute;
+    top: -60px;
+    left: 57%; }
+  .features .featuresNav .featureLink {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    height: 100%;
+    width: 16.28%;
+    background-color: #d6e9f4;
+    border-right: 2px solid gray;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    color: #3f3f3f;
+    text-align: center; }
+    .features .featuresNav .featureLink h2 {
+      font-size: 1em;
+      line-height: 1;
+      margin-top: 10px;
+      transition: all 0.3s;
+      margin-bottom: 0; }
+  .features .featuresNav .featureLink:last-of-type {
+    border-right: 2px solid transparent; }
+  .features .featuresNav .featureLink.plusLink {
+    background-color: #e2f8ed;
+    position: relative; }
+    .features .featuresNav .featureLink.plusLink img.plusLogo {
+      position: absolute;
+      top: -62px;
+      left: -5px; }
+  .features .featuresNav .featureLink:hover, .features .featuresNav .featureLink:active, .features .featuresNav .featureLink:focus {
+    border: 2px solid #0277bd;
+    -ms-transform: scale(1.03);
+        transform: scale(1.03);
+    outline: none;
+    z-index: 1; }
+    .features .featuresNav .featureLink:hover h2, .features .featuresNav .featureLink:active h2, .features .featuresNav .featureLink:focus h2 {
+      color: #0277bd; }
+  .features .featuresNav .featureLink.plusLink:hover, .features .featuresNav .featureLink.plusLink:active, .features .featuresNav .featureLink.plusLink:focus {
+    border: 2px solid #43b77d;
+    -ms-transform: scale(1.03);
+        transform: scale(1.03);
+    outline: none; }
+    .features .featuresNav .featureLink.plusLink:hover h2, .features .featuresNav .featureLink.plusLink:active h2, .features .featuresNav .featureLink.plusLink:focus h2 {
+      color: #43b77d; }
+    .features .featuresNav .featureLink.plusLink:hover img.plusLogo, .features .featuresNav .featureLink.plusLink:active img.plusLogo, .features .featuresNav .featureLink.plusLink:focus img.plusLogo {
+      -ms-transform: scale(0.97);
+          transform: scale(0.97); }
+
+.features .centeredText .container h2, .features .centeredText .container p {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 465px; }
+
+.features .centeredText .container h2 {
+  margin-bottom: 20px;
+  font-size: 1.6em; }
+
+.features .featuresList .container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .features .featuresList .container .feature {
+    width: 33.333%;
+    padding-right: 50px;
+    margin-bottom: 50px; }
+    .features .featuresList .container .feature .imgDot {
+      width: 50px;
+      height: 50px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      background-color: #d6e9f4;
+      border-radius: 50%; }
+      .features .featuresList .container .feature .imgDot img {
+        max-width: 100%;
+        height: auto;
+        width: 50%; }
+    .features .featuresList .container .feature h3 {
+      margin-top: 30px;
+      margin-bottom: 10px; }
+  .features .featuresList .container .plusFeature .imgDot {
+    background-color: #e2f8ed; }
+
+.features .imageLeftTextRight .container {
+  display: -ms-flexbox;
+  display: flex; }
+  .features .imageLeftTextRight .container .right, .features .imageLeftTextRight .container .left {
+    width: 50%; }
+    .features .imageLeftTextRight .container .right .btn, .features .imageLeftTextRight .container .left .btn {
+      display: inline-block;
+      margin-top: 20px; }
+  .features .imageLeftTextRight .container .left {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .features .imageLeftTextRight .container .left div {
+      width: 70%; }
+  .features .imageLeftTextRight .container .right {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px 10% 30px 0; }
+
+.features .imageRightTextLeft .container {
+  display: -ms-flexbox;
+  display: flex; }
+  .features .imageRightTextLeft .container .right, .features .imageRightTextLeft .container .left {
+    width: 50%; }
+    .features .imageRightTextLeft .container .right .btn, .features .imageRightTextLeft .container .left .btn {
+      display: inline-block;
+      margin-top: 20px; }
+  .features .imageRightTextLeft .container .left {
+    padding: 30px 10% 30px 0; }
+    .features .imageRightTextLeft .container .left div {
+      width: 70%; }
+  .features .imageRightTextLeft .container .right {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
 
 /* BLOG */
 .blog .banner {
